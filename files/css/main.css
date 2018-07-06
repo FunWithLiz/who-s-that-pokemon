@@ -42,6 +42,22 @@ button:focus {outline:0;}
     width: 100%;
 }
 
+.progressBorder{
+    width: 390px;
+    height: 30px;
+    border: solid 5px #356abc;
+
+    position: relative;
+    left: 30%;
+    margin: 20px;
+}
+
+.progressFiller{
+    height: 30px;
+    width: 0px;
+    background-color: #face33;
+}
+
 .modal {
     top:0%;
     position: fixed;
@@ -81,7 +97,7 @@ p{
 
 form.container{
     position: absolute;
-    left: 30%;
+    left: 35%;
 }
 
 .guess{
@@ -90,14 +106,16 @@ form.container{
 }
   
 .timer{
-    background-color:#419D78;
-    color:#EFD0CA;
-    font-size: 20px;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
     text-align: center;
+
 }
 
 .centerButton{
     display: flex;
+    align-items: center;
 }
 
 .enter{
@@ -105,4 +123,9 @@ form.container{
     height: 30px;
     border-radius: 0px;
 
+}
+
+button#submit.enter{
+    margin: 0px;
+    left: 50%
 }

@@ -11,7 +11,7 @@
 
 //MODAL
 const modal = document.querySelector(".modal");
-const trigger = document.querySelector(".trigger");
+const triggerModal = document.querySelector(".triggerModal");
 const closeout = document.querySelector(".closeout");
 
 function toggleModal(){
@@ -24,7 +24,7 @@ function windowOnClick(e){
   }
 }
 
-trigger.addEventListener("click", toggleModal);
+triggerModal.addEventListener("click", toggleModal);
 closeout.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
