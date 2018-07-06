@@ -1,0 +1,108 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.logofront{
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 24%;
+}
+
+.buttonfront{
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+    margin-top: 21px;
+    background-color: red;
+    border: 4px solid black;
+    text-decoration: none;
+    border-radius: 100px 10px;
+    position: absolute;
+    left: 40%;
+    width: 20%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+button:focus {outline:0;}
+
+.cover{
+    width: 100%;
+}
+
+.modal {
+    top:0%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Titillium Web', sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+h1{
+    padding-top: 10%
+}
+
+p{
+
+    line-height: 24px;
+    font-size: 20px;
+}
+
+
+
+.closeout:hover{
+    background-color: darkgray;
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+form.container{
+    position: absolute;
+    left: 30%;
+}
+
+.guess{
+    width: 200px;
+
+}
+  
+.timer{
+    background-color:#419D78;
+    color:#EFD0CA;
+    font-size: 20px;
+    text-align: center;
+}
+
+.centerButton{
+    display: flex;
+}
+
+.enter{
+    width: 80px;
+    height: 30px;
+    border-radius: 0px;
+
+}
