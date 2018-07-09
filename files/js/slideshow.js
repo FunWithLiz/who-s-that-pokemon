@@ -5,6 +5,8 @@ let gameOver = false;
 let whichGen;
 var kanto = document.querySelector(".firstContainer");
 
+
+
 function toggleFirst() {
   whichGen = 1;
   location.reload();
@@ -15,7 +17,7 @@ function toggleFirst() {
   // 00 + ":" + 10;
   // location.reload();
   // startTimer1();
-
+  
 }
 
 var reset = document.querySelector('.timer');
@@ -27,14 +29,14 @@ function toggleSecond() {
   reset = document.querySelector(".secondContainer > div");
   // console.log(reset);
   var johto = document.querySelector(".secondContainer");
-      kanto.style.visibility = "hidden";
-      johto.style.visibility = "visible";
-      
-      reset.innerText =
-      00 + ":" + 10;
-      startTimer2();
-
-      
+  kanto.style.visibility = "hidden";
+  johto.style.visibility = "visible";
+  
+  reset.innerText =
+  00 + ":" + 10;
+  startTimer2();
+  
+  
 }
 
 //slideshow
@@ -56,17 +58,22 @@ let mainPic2 = document.querySelector('#johto');
 let stop;
 let currentSlide = 0;
 
+let scoreBoard = document.querySelector('.score');
+let score = 0;
 
 
 
-  submit.addEventListener("click", (event) => {
+submit.addEventListener("click", (event) => {
   event.preventDefault();
-    if(arrayName[currentSlide] === input.value){
-      mainPic.src = "../../images/gen1/color/" + array[currentSlide];
-
-      document.querySelector('.timer').style.visibility = 'hidden'
-
-      // document.querySelector('.timer').innerText =
+  if(arrayName[currentSlide] === input.value){
+    mainPic.src = "../../images/gen1/color/" + array[currentSlide];
+    
+    score+=10;
+    scoreBoard.innerHTML = score;
+    
+    document.querySelector('.timer').style.visibility = 'hidden'
+    
+    // document.querySelector('.timer').innerText =
       // 00 + ":" + 00;
       setTimeout(() => {document.querySelector('.timer').innerText =
       00 + ":" + 00;}, 2000);
@@ -76,15 +83,15 @@ let currentSlide = 0;
   });
   
 
-
-
-
   submit2.addEventListener("click", (event) => {
     event.preventDefault();
     document.querySelector('.timer').style.visibility = 'hidden'
       if(arrayName2[currentSlide] === input2.value){
         mainPic2.src = "../../images/gen2/color/" + array2[currentSlide];
   
+
+        score+=10;
+        scoreBoard.innerHTML = score;
         // reset.style.visibility = 'hidden'
         // reset.innerText =
         // 00 + ":" + 00;
@@ -102,14 +109,44 @@ document.querySelector('.timer').innerText =
 00 + ":" + 10;
 startTimer1();
 
+let end = document.querySelector(".modal1");
+let end2 = document.querySelector(".modal2");
+let end3 = document.querySelector(".modal3");
+
+function checkEnd1(){
+  if(score <= 40){
+    end.style.opacity = 1;
+    end.style.visibility = "visible";
+  } else if(score <= 100){
+    end2.style.opacity = 1;
+    end2.style.visibility = "visible";
+  } else if(score === 140){
+    end3.style.opacity = 1;
+    end3.style.visibility = "visible";
+  }
+}
+
+function checkEnd2(){
+  if(score <= 40){
+    end.style.opacity = 1;
+    end.style.visibility = "visible";
+  } else if(score <= 100){
+    end2.style.opacity = 1;
+    end2.style.visibility = "visible";
+  } else if(score === 140){
+    end3.style.opacity = 1;
+    end3.style.visibility = "visible";
+  }
+}
 
 function startTimer1() {
   if(currentSlide===13){
     gameOver = true;
   }
   if(gameOver === true){
-    clearTimeout(startTimer1);
-  }
+      clearTimeout(startTimer1);
+      setTimeout(checkEnd1,1500)
+    }
   
   var presentTime = document.querySelector('.timer').innerText;
   var timeArray = presentTime.split(/[:]+/);
@@ -139,15 +176,13 @@ function startTimer1() {
   }
  
 
-
-
-
   function startTimer2() {
     if(currentSlide===13){
       gameOver = true;
     }
     if(gameOver === true){
       clearTimeout(startTimer2);
+      setTimeout(checkEnd2,1500);
     }
     
     var presentTime = document.querySelector('.secondContainer > div').innerText;

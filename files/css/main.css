@@ -36,13 +36,15 @@ button{
     color: white;
 }
 
-button:focus {outline:0;}
+button:focus {
+    outline:0;
+}
 
-.cover{
+.cover {
     width: 100%;
 }
 
-.progressBorder{
+.progressBorder {
     width: 390px;
     height: 30px;
     border: solid 5px #356abc;
@@ -52,7 +54,7 @@ button:focus {outline:0;}
     margin: 20px;
 }
 
-.progressFiller{
+.progressFiller {
     height: 30px;
     width: 0px;
     background-color: #face33;
@@ -72,17 +74,45 @@ button:focus {outline:0;}
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
-h1{
+.modal1, .modal2, .modal3 {
+    top:0%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+h1 {
     padding-top: 10%
 }
 
-p{
-
+p {
+    font-family: 'Titillium Web', sans-serif;
     line-height: 24px;
     font-size: 20px;
 }
 
-
+.styleYoButton{
+    cursor: pointer;
+    margin-top: 21px;
+    background-color: red;
+    border: 4px solid black;
+    text-decoration: none;
+    border-radius: 100px 10px;
+    position: absolute;
+    left: 40%;
+    width: 20%;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 35px;
+    color: white;
+}
 
 .closeout:hover{
     background-color: darkgray;
@@ -95,17 +125,17 @@ p{
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-form.firstContainer{
+form.firstContainer, .secondContainer{
     position: absolute;
     left: 30%;
 }
 
-.guess{
+.guess, .guess2 {
     width: 200px;
 
 }
   
-.timer{
+.timer {
     color: black;
     font-family: 'Titillium Web', sans-serif;
     font-size: 25px;
@@ -113,19 +143,20 @@ form.firstContainer{
 
 }
 
-.centerButton{
+.centerButton, .centerButton2{
     display: flex;
     align-items: center;
     margin-left: 10%;
 }
 
-.enter{
+.enter, .enter2{
     width: 80px;
     height: 30px;
     border-radius: 0px;
 }
 
-button#submit.enter{
+
+button#submit.enter, button#submit.enter2{
     margin: 0px;
     left: 60%
 }
@@ -150,3 +181,55 @@ button#submit.enter{
 .secondContainer{
     visibility: hidden;
 }
+
+.js-score {
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+/* 
+.level-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Titillium Web', sans-serif;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    background-color: #111;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    opacity: 0;
+    transition: all 250ms ease;
+}
+
+.level-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Titillium Web', sans-serif;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    background-color: #111;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    opacity: 0;
+    transition: all 250ms ease;
+}
+
+.level-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Titillium Web', sans-serif;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+    background-color: #111;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    transition: all 250ms ease;
+} */
