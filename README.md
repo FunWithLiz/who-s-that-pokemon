@@ -13,7 +13,9 @@ Ever wonder if you're worthy of calling yourself a Pokemon Master? Well, you'll 
 ## Wireframe
 
 (Your wireframes go here. Preferably two or more)
-Check the Wireframes folder for wireframes.
+Inline-style: 
+![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P1.png "Wireframe 1")
+
 
 
 ## Initial thoughts on game structure
