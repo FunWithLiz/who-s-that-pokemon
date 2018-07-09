@@ -25,6 +25,9 @@ Some things that I've encountered in my game:
 ->Selected my class timer and declared it in event listener function.
 
 2. Ending the timer and the next image once the images runs out.
+->SetTimeout
+
+3. Able to reset timer in the second gen.
 
 ## Phases of Completion
 
