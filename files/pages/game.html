@@ -11,35 +11,55 @@
     <img class="logofront" src="https://fontmeme.com/permalink/180703/ec5a94b1b827c25cfa6ceb1fef4d5b56.png" alt="pokemon-font" border="0">
 </head>
 <body>
-
-
+    
+    
     <div class="progressBorder">
         <div class="progressFiller"></div>
     </div>
-
-
-<div>
-
-        <form class="container">
+    
+    
+    <div class="flexBarAndImage">
         
-                <img class="mySlides" id="pic1" src="../../images/gen1/black/b_pikachu.png">
+        <div class="sidebar">
+            <button class="gen firstBut" onclick="toggleFirst()">Gen 1</button>
+            <button class="gen secondBut" onclick="toggleSecond()">Gen 2</button>
+        </div>
+        
+        
+        <div>
+            
+            <form class="firstContainer">
+                <div class="timer">Time left = <span class="timer"></span></div>
+                
+                <img class="mySlides" id="kanto" src="../../images/gen1/black/b_pikachu.png">
         
                 <center>
                 <div class="centerButton">
                 <input class="guess" type="text" placeholder="Guess the Pokemon name">
                 <button class="enter" type="submit" id="submit" style="font-size: 10px;">Submit</button>
-                </div>
-                </center>
+                </center> 
+            </form>
+        </div>
+        
 
+        <div>
+            <form class="secondContainer">
+            <div class="timer">Time left = <span class="timer"></span></div>
+            <img class="mySlides" id="johto" src="../../images/gen2/black/b_slowking.png">
+    
+            <center>
+            <div class="centerButton2">
+            <input class="guess2" type="text" placeholder="Guess the Pokemon name">
+            <button class="enter2" type="submit" id="submit" style="font-size: 10px;">Submit</button>
+            </div>
+            </center>
+            </form>
+        
+        </div>
 
-            
-
-
-        </form>
-</div>
+    </div>
         
         
-<div class="timer">Time left = <span class="timer"></span></div>
 
 
 
@@ -59,5 +79,6 @@
 
 
     <script src="../js/slideshow.js"></script>
+    
 </body>
 </html>

@@ -95,9 +95,9 @@ p{
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-form.container{
+form.firstContainer{
     position: absolute;
-    left: 35%;
+    left: 30%;
 }
 
 .guess{
@@ -116,16 +116,37 @@ form.container{
 .centerButton{
     display: flex;
     align-items: center;
+    margin-left: 10%;
 }
 
 .enter{
     width: 80px;
     height: 30px;
     border-radius: 0px;
-
 }
 
 button#submit.enter{
     margin: 0px;
-    left: 50%
+    left: 60%
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+}
+
+.sidebar .gen{
+    position: relative;
+    left: 20px;
+    width: 200px;
+}
+
+.flexBarAndImage{
+    display: flex;
+}
+
+.secondContainer{
+    visibility: hidden;
 }
