@@ -13,9 +13,11 @@ Ever wonder if you're worthy of calling yourself a Pokemon Master? Well, you'll 
 ## Wireframe
 
 (Your wireframes go here. Preferably two or more)
-Inline-style: 
-![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P1.png "Wireframe 1")
 
+![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P1.png "Wireframe 1")
+![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P2.png "Wireframe 2")
+![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P3.png "Wireframe 3")
+![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P4.png "Wireframe 4")
 
 
 ## Initial thoughts on game structure
