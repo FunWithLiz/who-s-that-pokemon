@@ -16,8 +16,6 @@ Made several JS files and linked it with my two HTML files I made for this game.
 
 ## Wireframe
 
-(Your wireframes go here. Preferably two or more)
-
 ![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P1.png "Wireframe 1")
 ![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P2.png "Wireframe 2")
 ![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/wireframe/P3.png "Wireframe 3")
@@ -26,20 +24,21 @@ Made several JS files and linked it with my two HTML files I made for this game.
 
 ## Initial thoughts on game structure
 
-(Write out what challenges you expect to encounter, or ideas you want to come up with)
 Some things that I've encountered in my game:
 
 1. Try to reset my time after submitting the correct answer. 
 ->Selected my class timer and declared it in event listener function.
 
 2. Ending the timer and the next image once the images runs out.
-->SetTimeout
+-> SetTimeout and clearInterval in a separate function to check if the game is over.
 
 3. Able to reset timer in the second gen.
+-> Declared a whole other set of functions for gen 2. This also relates to the toggle function in the beginning of the JS file.
+
+4. Completion of the modal boxes corresponding to the score towards the end of the game.
+-> Declared multiple functions and classes to maintain linking the HTML, CSS and JS all together.
 
 ## Phases of Completion
-
-(The steps or phases you expect to go through, and the tasks that you'll need to accomplish to reach each step. These should resemble the acceptance criteria we were working through earlier.)
 
 1. Complete wireframes
 2. Collect assets (images/or audio)
@@ -49,20 +48,29 @@ Some things that I've encountered in my game:
   c. Submit button that changes current image
   d. End slide images
   e. Prompt User corresponding messages
-
+  f. Restart game
 
 ## Links and Resources
-
-(Anything you've looked up so far or are thinking about using. Links to repo and project board)
 
 https://gearoid.me/pokemon/
 https://sabe.io/tutorials/how-to-create-modal-popup-box
 https://codepen.io/ginnygu/pen/xzBLMM
 
+## Due Credit
 
-MVP
-Need to be able to guess pokemon and match the images,
-show timer for countdown,
-needs the submit button to work for the next image to be displayed,
-need to show user a prompt corresponding to their invisible score set in the code,
-show a button that they can play again.
+#### Christopher Lin
+-> function startTimer
+
+-> setTimeout
+
+-> GameOver Declarations
+
+#### Aaron Addison
+-> startTimer
+
+-> clearInterval
+
+-> Resetting timer
+
+#### Jonathan Lora
+-> score filler
