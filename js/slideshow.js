@@ -51,7 +51,7 @@ let score = 0;
 submit.addEventListener("click", (event) => {
   event.preventDefault();
   if(arrayName[currentSlide] === input.value){
-    mainPic.src = "../../images/gen1/color/" + array[currentSlide];
+    mainPic.src = "../images/gen1/color/" + array[currentSlide];
     
     score+=10;
     scoreBoard.innerHTML = score;
@@ -60,7 +60,7 @@ submit.addEventListener("click", (event) => {
   
       setTimeout(() => {document.querySelector('.timer').innerText =
       00 + ":" + 00;}, 2000);
-      document.querySelector('.timer').style.visibility = 'visible'
+      document.querySelector('.timer').style.visibility = 'visible';
       input.value = document.querySelector(".guess").innerText = '';
     }
   });
@@ -70,14 +70,14 @@ submit.addEventListener("click", (event) => {
     event.preventDefault();
     document.querySelector('.timer').style.visibility = 'hidden'
       if(arrayName2[currentSlide] === input2.value){
-        mainPic2.src = "../../images/gen2/color/" + array2[currentSlide];
+        mainPic2.src = "../images/gen2/color/" + array2[currentSlide];
   
         score+=10;
         scoreBoard.innerHTML = score;
 
         setTimeout(() => {document.querySelector('.secondContainer > div').innerText =
       00 + ":" + 00;}, 2000);
-        reset.style.visibility = 'visible'
+        reset.style.visibility = 'visible';
         input2.value = document.querySelector(".guess2").innerText = '';
       }
     });
@@ -126,7 +126,7 @@ function startTimer1() {
   }
   if(gameOver === true){
       clearTimeout(startTimer1);
-      setTimeout(checkEnd1,1500)
+      setTimeout(checkEnd1,1500);
     }
   
   var presentTime = document.querySelector('.timer').innerText;
@@ -143,7 +143,7 @@ function startTimer1() {
       addProgress = currentSlide * 30;
       progress.style.width = addProgress + 'px';
   
-      mainPic.src = "../../images/gen1/black/b_" + array[currentSlide];
+      mainPic.src = "../images/gen1/black/b_" + array[currentSlide];
       
     }
       m = 00;
@@ -181,7 +181,7 @@ function startTimer1() {
         addProgress = currentSlide * 30;
         progress.style.width = addProgress + 'px';
       
-        mainPic2.src = "../../images/gen2/black/b_" + array2[currentSlide];
+        mainPic2.src = "../images/gen2/black/b_" + array2[currentSlide];
   
       }
         m = 00;
