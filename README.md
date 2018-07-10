@@ -1,14 +1,18 @@
 *** Name / Date ***
 My name is Elizabeth Fun, the project start date is July 2, 2018.
 
-# [Who's that Pokemon?] Proposal
+## What is Who's that Pokemon?
 
-## What is [name of game]?
-The name of the game is: Who's that Pokemon?
+Ever wonder if you're worthy of calling yourself a Pokemon Master? Well, YOU'VE COME TO THE RIGHT PAGE. Because you'll be testing your skills in guessing the Pokemon's name after seeing their silhouette. You'll also need to beat the timer on the screen before it switches to the next image. How many Pokemon can you guess? Good Luck!
 
-(Brief description of the game, why you're choosing to make it)
+## Technical Discussion
+### HTML
+Didn't use that much HTML in game other than using the input value to move on to the next image.
+### CSS
+Used a lot of CSS to style the buttons to match the Pokemon Logo.
+### JavaScript
+Made several JS files and linked it with my two HTML files I made for this game.
 
-Ever wonder if you're worthy of calling yourself a Pokemon Master? Well, you'll find out here after playing Who's that Pokemon. You'll test your skills in guessing the Pokemon's name after seeing their silhouette and beat that timer on the screen. Good Luck!
 
 ## Wireframe
 
