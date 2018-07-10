@@ -74,3 +74,6 @@ https://codepen.io/ginnygu/pen/xzBLMM
 
 #### Jonathan Lora
 -> score filler
+
+## Opportunities for Growth
+The game works as I anticipated, would like to add in a challenge round which allows the user to listen to a clip of a Pokemon's cry and guess based on that. This was the last item on my list to do if I had time to work on it. Perhaps in the near future, I will be able to finish the game with the challenge round completed.
