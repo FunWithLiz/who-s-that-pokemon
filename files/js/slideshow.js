@@ -5,19 +5,11 @@ let gameOver = false;
 let whichGen;
 var kanto = document.querySelector(".firstContainer");
 
-
-
 function toggleFirst() {
   whichGen = 1;
   location.reload();
   addProgress = 0;
   progress.style.width = addProgress + 'px';
-  //timer countdown
-  // document.querySelector('.timer').innerText =
-  // 00 + ":" + 10;
-  // location.reload();
-  // startTimer1();
-  
 }
 
 var reset = document.querySelector('.timer');
@@ -27,20 +19,15 @@ function toggleSecond() {
   addProgress = 0;
   progress.style.width = addProgress + 'px';
   reset = document.querySelector(".secondContainer > div");
-  // console.log(reset);
   var johto = document.querySelector(".secondContainer");
   kanto.style.visibility = "hidden";
   johto.style.visibility = "visible";
-  
   reset.innerText =
   00 + ":" + 10;
   startTimer2();
-  
-  
 }
 
-//slideshow
-
+//slideshow for images
 var array = ["pikachu.png", "scyther.png", "sandslash.png", "arbok.png", "primeape.png", "mew.png", "rattata.png", "snorlax.png", "weedle.png", "nidorina.png", "mr_mime.png", "rhydon.png", "venosaur.png", "pidgeot.png"];
 var arrayName = ['pikachu', 'scyther', 'sandslash', 'arbok', 'primeape', 'mew', 'rattata', 'snorlax', 'weedle', 'nidorina', 'mr. mime', 'rhydon', 'venosaur', 'pidgeot'];
 
@@ -61,8 +48,6 @@ let currentSlide = 0;
 let scoreBoard = document.querySelector('.score');
 let score = 0;
 
-
-
 submit.addEventListener("click", (event) => {
   event.preventDefault();
   if(arrayName[currentSlide] === input.value){
@@ -72,9 +57,7 @@ submit.addEventListener("click", (event) => {
     scoreBoard.innerHTML = score;
     
     document.querySelector('.timer').style.visibility = 'hidden'
-    
-    // document.querySelector('.timer').innerText =
-      // 00 + ":" + 00;
+  
       setTimeout(() => {document.querySelector('.timer').innerText =
       00 + ":" + 00;}, 2000);
       document.querySelector('.timer').style.visibility = 'visible'
@@ -89,12 +72,8 @@ submit.addEventListener("click", (event) => {
       if(arrayName2[currentSlide] === input2.value){
         mainPic2.src = "../../images/gen2/color/" + array2[currentSlide];
   
-
         score+=10;
         scoreBoard.innerHTML = score;
-        // reset.style.visibility = 'hidden'
-        // reset.innerText =
-        // 00 + ":" + 00;
 
         setTimeout(() => {document.querySelector('.secondContainer > div').innerText =
       00 + ":" + 00;}, 2000);
@@ -113,6 +92,8 @@ let end = document.querySelector(".modal1");
 let end2 = document.querySelector(".modal2");
 let end3 = document.querySelector(".modal3");
 
+
+//Check for ending function
 function checkEnd1(){
   if(score <= 40){
     end.style.opacity = 1;
@@ -201,7 +182,6 @@ function startTimer1() {
         progress.style.width = addProgress + 'px';
       
         mainPic2.src = "../../images/gen2/black/b_" + array2[currentSlide];
-        
   
       }
         m = 00;
@@ -214,9 +194,6 @@ function startTimer1() {
       if(gameOver === false){setTimeout(startTimer2, 1000);
       }
     }
-   
-
-
 
 
 function checkSecond(sec) {

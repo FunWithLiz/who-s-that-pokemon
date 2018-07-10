@@ -1,3 +1,5 @@
+//corresponding modals based on your score
+
 const modal1 = document.querySelectorAll(".modal1");
 const modal2 = document.querySelectorAll(".modal2");
 const modal3 = document.querySelectorAll(".modal3");
@@ -5,7 +7,6 @@ const modal3 = document.querySelectorAll(".modal3");
 const closeout = document.querySelector(".closeout");
 
 function toggleModal1(){
-  // console.log("this is modal1:", modal1);
   modal1[0].classList.toggle("show-modal");
 }
 

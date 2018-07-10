@@ -48,7 +48,6 @@ button:focus {
     width: 390px;
     height: 30px;
     border: solid 5px #356abc;
-
     position: relative;
     left: 30%;
     margin: 20px;
@@ -188,48 +187,3 @@ button#submit.enter, button#submit.enter2{
     font-size: 25px;
     margin-left: 20px;
 }
-/* 
-.level-1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: 'Titillium Web', sans-serif;
-    transform: translate(-50%, -50%);
-    padding: 4rem;
-    background-color: #111;
-    text-align: center;
-    color: white;
-    z-index: 10;
-    opacity: 0;
-    transition: all 250ms ease;
-}
-
-.level-2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: 'Titillium Web', sans-serif;
-    transform: translate(-50%, -50%);
-    padding: 4rem;
-    background-color: #111;
-    text-align: center;
-    color: white;
-    z-index: 10;
-    opacity: 0;
-    transition: all 250ms ease;
-}
-
-.level-3{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: 'Titillium Web', sans-serif;
-    transform: translate(-50%, -50%);
-    padding: 4rem;
-    background-color: #111;
-    color: white;
-    text-align: center;
-    z-index: 10;
-    opacity: 0;
-    transition: all 250ms ease;
-} */
