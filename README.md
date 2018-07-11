@@ -1,6 +1,10 @@
+![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/Screen%20Shot%202018-07-11%20at%204.54.31%20PM.png "Screenshot 1")
+
 ## What is Who's that Pokemon?
 
 Ever wonder if you're worthy of calling yourself a Pokemon Master? Well, YOU'VE COME TO THE RIGHT PAGE. Because you'll be testing your skills in guessing the Pokemon's name after seeing their silhouette. You'll also need to beat the timer on the screen before it switches to the next image. How many Pokemon can you guess? Good Luck!
+
+![alt text](https://github.com/FunWithLiz/who-s-that-pokemon/blob/master/Screen%20Shot%202018-07-11%20at%204.55.53%20PM.png "Screenshot 2")
 
 ## Technical Discussion
 ### HTML
