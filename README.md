@@ -1,6 +1,3 @@
-*** Name / Date ***
-My name is Elizabeth Fun, the project start date is July 2, 2018.
-
 ## What is Who's that Pokemon?
 
 Ever wonder if you're worthy of calling yourself a Pokemon Master? Well, YOU'VE COME TO THE RIGHT PAGE. Because you'll be testing your skills in guessing the Pokemon's name after seeing their silhouette. You'll also need to beat the timer on the screen before it switches to the next image. How many Pokemon can you guess? Good Luck!
